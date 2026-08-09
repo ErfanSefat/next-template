@@ -23,6 +23,12 @@ const eslintConfig = defineConfig([
       import: importPlugin,
     },
 
+    settings: {
+      "import/resolver": {
+        typescript: true,
+      },
+    },
+
     rules: {
       // Ensure imports are grouped and sorted.
       "import/order": [
